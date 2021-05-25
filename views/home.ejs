@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+<div class="main">
+    <h1>Home Routes</h1>
+ <p><%= homeContent %> </p> 
+
+
+<% GetPost.forEach(pst => { %>
+<h1><%=pst.title %> </h1>
+<p><%= pst.post.substring(0,50)+" ..." %> <a href="/posts/<%= pst._id %> >">Read More</a></p>
+
+<% }) %>
+</div>
+
+<%- include('partials/footer'); -%>

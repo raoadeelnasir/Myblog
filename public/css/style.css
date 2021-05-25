@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+.gap-container{
+  height: 100vh;
+  min-width: 930px;
+}
+.main{
+  padding-top: 10px;
+  margin-top: 10px;
+  max-width: 930px;
+  margin: auto;
+}
+
+.footer {
+  padding: 10px;
+  background-color: rgb(236, 186, 186);
+  text-align: center;
+}
+.btn-submit {
+  background-color: rgb(107, 107, 136);
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.box {
+  max-width: 930px;
+  margin: auto;
+  padding-top: 30px;
+  /* height: 89vh; */
+}
+.txt {
+  display: block;
+  width: 100%;
+}
