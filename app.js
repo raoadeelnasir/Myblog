@@ -6,8 +6,6 @@ const mongoose = require('mongoose')
 const { static } = require("express");
 const connectDB = require("./connectionDB");
 const app = express();
-const PORT = 3000;
-
 //mongo connection
 require('./connectionDB')
 connectDB();
@@ -85,6 +83,12 @@ app.post("/compose", (req, res) => {
   res.redirect('/')
 });
 
-app.listen(PORT, () => {
+
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port, () => {
   console.log(`sever is listening at Port ${PORT}`);
 });
