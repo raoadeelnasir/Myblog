@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const _ = require('lodash');
@@ -90,5 +91,5 @@ if (port == null || port == "") {
   port = 3000;
 }
 app.listen(port, () => {
-  console.log(`sever is listening at Port ${PORT}`);
+  console.log(`sever is listening at Port ${port}`);
 });
